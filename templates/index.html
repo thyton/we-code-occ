@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href={% static "homepage/css/index.css" %} />
+    <title>We Code</title>
+    <meta name ="viewport" conten="width=device-width, initial-scale=1.0">
+<!--    <meta http-equiv="refresh" content="5; url=./index.html"> -->
+    <meta keywords="Orange Coast College,programming,club,computer science"
+  </head>
+  <body>
+    <nav id='top-menu'>
+      <ul class='menu'>
+        <li class='left'>
+          <a href='./schedule.html'>SCHEDULE</a>
+        </li>
+        <li class='left'>
+          <a href='./about.html'>ABOUT</a>
+        </li>
+        <li>
+          <svg height="70" width="200">
+            <text x="0" y="60" fill="black" font-size="50"
+            font-family="Alfa Slab One" font-weight="bold"
+            font-style="normal" letter-spacing="1" text-align="center">WeCode</text>
+          </svg>
+        </li>
+        <li class='right'>
+          <a href='./practice.html'>PRACTICE</a>
+        </li>
+        <li class='right'>
+          <a href='./contact.html'>CONTACT</a>
+        </li>
+    </nav>
+    <h1>This Week Meetings</h1>
+    <ul>
+      <li> announce 1 </li>
+      <li> announce 2 </li>
+      <li> announce 3 </li>
+      <li> announce 4 </li>
+    </ul>
+    <h1>Schedule</h1>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Time</td>
+        <td>Location</td>
+      </tr>
+
+      <tr>
+        <td>MON</td>
+        <td class="time">
+            <li>10:40 AM - 12:40 PM</li>
+            <li>1:40 - 3:40 PM</li>
+        </td>
+        <td class="locations">MBCC 125</td>
+      </tr>
+
+      <tr>
+        <td>TUE</td>
+        <td class="time">5:50 - 7:50 PM</td>
+        <td class="locations">MBCC 136</td>
+
+      </tr>
+      <tr>
+        <td>WED</td>
+        <td class="time">12:00 - 3:40 PM</td>
+        <td class="locations">MBCC 136<td>
+      </tr>
+      <tr>
+        <td>THU</td>
+        <td class="time">5:50 - 7:50 PM</td>
+        <td class="locations">MBCC 125</td>
+      </tr>
+    </table>
+  </body>
+</html>
