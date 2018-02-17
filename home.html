@@ -31,46 +31,34 @@
           <a href='./contact.html'>CONTACT</a>
         </li>
     </nav>
-    <h1>This Week Meetings</h1>
-    <ul>
-      <li> announce 1 </li>
-      <li> announce 2 </li>
-      <li> announce 3 </li>
-      <li> announce 4 </li>
-    </ul>
-    <h1>Schedule</h1>
     <table>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Time</td>
-        <td>Location</td>
+      <tr class="colTitle">
+          <td>MON</td>
+          <td>TUE</td>
+          <td>WED</td>
+          <td>THU</td>
       </tr>
-
-      <tr>
-        <td>MON</td>
-        <td class="time">
-            <li>10:40 AM - 12:40 PM</li>
-            <li>1:40 - 3:40 PM</li>
+      <tr id="date" font-style="italic"></tr>
+      </tr>
+      <tr >
+        <td>
+          <ul id="mon">
+          </ul>
         </td>
-        <td class="locations">MBCC 125</td>
-      </tr>
-
-      <tr>
-        <td>TUE</td>
-        <td class="time">5:50 - 7:50 PM</td>
-        <td class="locations">MBCC 136</td>
-
-      </tr>
-      <tr>
-        <td>WED</td>
-        <td class="time">12:00 - 3:40 PM</td>
-        <td class="locations">MBCC 136<td>
-      </tr>
-      <tr>
-        <td>THU</td>
-        <td class="time">5:50 - 7:50 PM</td>
-        <td class="locations">MBCC 125</td>
+        <td>
+          <ul id="tue">
+          </ul>
+        </td>
+        <td >
+          <ul id="wed">
+          </ul>
+        </td>
+        <td>
+          <ul id="thu">
+          </ul>
+        </td>
       </tr>
     </table>
+    <script src="js/events.js"></script>
   </body>
 </html>

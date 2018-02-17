@@ -12,14 +12,30 @@ function yymmdd(day){
 }
 
 today = new Date();
-today.setDate(today.getDate() + 7);
+today.setDate(today.getDate() + 12);
 monday = getMondayOfCurrentWeek(today);
-let thisWeek = { mon: '', tue: '', wed:'', thu: '', fri:''};
+let thisWeek = { 'mon': '', 'tue': '', 'wed':'', 'thu': ''};
 let count = 0;
+let meetingsHTML = {};
+let date = '';
 let calculatedDay = new Date();
 for (var day in thisWeek)
 {
+  meetingsHTML[day] = ''
   calculatedDay.setDate(monday.getDate() + count);
   thisWeek[day]= yymmdd(calculatedDay);
+  date += '<td>' + thisWeek[day].substring(5).replace('-',' / ') + "</td>";
+
+  var meetings = events[thisWeek[day]];
+  for (var meeting in meetings)
+  {
+    meetingsHTML[day] += '<li class=time>' + meetings[meeting].time + "</li>";
+    meetingsHTML[day] += '<li class=location>' + meetings[meeting].location + "</li>";
+  }
+  if(meetingsHTML[day] != '')
+  {
+    document.getElementById(day).innerHTML= meetingsHTML[day];
+  }
   ++count;
 }
+document.getElementById("date").innerHTML = date;
