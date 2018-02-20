@@ -49,8 +49,9 @@ table {
     color: black;
     border-top: 5px solid #222222;
     margin: 100px auto;
-    width: 1200px;
+    width: 1000px;
     margin-bottom: 20px;
+    table-layout: fixed;
   }
 
 .colTitle {
@@ -88,19 +89,41 @@ th {
     padding: 8px;
 }
 
+li {
+  list-style-type: square;
+}
 
+.time {
+  text-align: center;
+  font: normal 400 1.4em "BebasNeue", Helvetica, Arial, Sans-Serif;
+  letter-spacing: 2px;
+  size: 20;
+  position: relative;
+  left: -25px;
+}
 
 .location {
   color: #b22222;
   size: 20;
   font: bolder Sans-Serif;
   display: inline-block;
+  list-style-type: none;
+  position: relative;
+  left: -25px;
 }
 
-.time {
-  list-style-type: square;
-  text-align: center;
-  font: normal 400 1.2em "BebasNeue", Helvetica, Arial, Sans-Serif;
-  letter-spacing: 1px;
+button {
+  /* background:#000000
+  color: #fffaf0; */
   size: 20;
+  position:relative;
+  transition: .5s ease;
+  top: 0px;
+  left: 600px;
+  right: -600px;
+}
+
+#back-schedule {
+}
+#next-schedule {
 }

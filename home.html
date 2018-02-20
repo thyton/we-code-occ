@@ -6,7 +6,7 @@
     <title>We Code</title>
     <meta name ="viewport" conten="width=device-width, initial-scale=1.0">
 <!--    <meta http-equiv="refresh" content="5; url=./index.html"> -->
-    <meta keywords="Orange Coast College,programming,club,computer science"
+    <meta keywords="Orange Coast College,programming,club,computer science">
   </head>
   <body>
     <nav id='top-menu'>
@@ -31,9 +31,12 @@
           <a href='contact.html'>CONTACT</a>
         </li>
     </nav>
+    <script src='js/events.js'> </script>
     <table>
       <tr class="colTitle">
-          <td>MON</td>
+          <td>
+            MON
+          </td>
           <td>TUE</td>
           <td>WED</td>
           <td>THU</td>
@@ -59,6 +62,9 @@
         </td>
       </tr>
     </table>
-    <script src="js/events.js"></script>
+    <button type='button' class id='back-schedule' onclick='getLastWeekSchedule()'>&lt; &lt;</button>
+    <text>
+    <button type='button' id='next-schedule' onclick='getNextWeekSchedule()'>&gt; &gt;</button>
+    <script> getWeekSchedule(new Date()); showBackScheduleButton();</script>
   </body>
 </html>
